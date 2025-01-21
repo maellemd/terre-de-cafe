@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "node build.js && node dist/server.js", 
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "formik": "^2.4.6"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "esbuild": "^0.24.2"
+  }
+}

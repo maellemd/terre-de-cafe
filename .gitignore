@@ -1,0 +1,24 @@
+# Fichiers de configuration sensibles
+.env
+session_config.php
+
+# Dossiers de dépendances
+/vendor/
+/node_modules/
+
+# Fichiers de verrouillage des dépendances
+composer.lock
+package-lock.json
+
+# Dossiers de développement ou spécifiques à l'IDE
+.vscode/
+
+# Dossiers temporaires ou de sessions
+/sessions/
+
+# Fichiers logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db

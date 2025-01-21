@@ -1,0 +1,429 @@
+/* Page d'inscription - Création du compte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    background-color: #d3cfc1;
+    color: #582f1b;
+}
+
+/* Header Styles */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 80px;
+    background: #d3cfc1;
+    box-shadow: 0 5px 15px #582f1b;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 110px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #582f1b;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #62805d;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #62805d;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Page Header */
+#page-header-account {
+    background-image: url("../img/banner-account.jpg");
+    width: 100%;
+    height: 20vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 14px;
+    margin-bottom: 40px;
+}
+
+#page-header-account h2 {
+    color: #d3cfc1;
+    font-style: italic;
+    
+    text-shadow: 2px 2px 4px #582f1b;
+    background: transparent;
+}
+
+/* Inscription Form */
+.inscription-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #e5e2d7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(88, 47, 27, 0.2);
+display: flex;
+flex-direction:column;
+align-items: center;
+margin: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #582f1b;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #62805d;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #582f1b;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #582f1b;
+    box-shadow: 0 0 5px rgba(98, 128, 93, 0.3);
+}
+
+small {
+    color: #62805d;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+button {
+    background-color: #62805d;
+    color: #d3cfc1;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #582f1b;
+}
+.edit-button , .logout-button{
+    background-color: #62805d;
+    color: #d3cfc1;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.message {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #582f1b;
+}
+
+.login-link a {
+    color: #62805d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* position: absolute; */
+}
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo {
+    margin-bottom: 30px;
+}
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .follow {
+    margin-top: 20px;    
+}
+footer .follow i {
+    color: #222;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install .row img {
+    border: 1px solid #62805d;
+    border-radius: 6px;
+}
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover {
+    color: #62805d;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+}
+footer img {
+    width: 100px;
+    border-radius: 10px;
+}
+  
+.copyright {
+    text-align: center;
+    padding: 20px;
+    color: #582f1b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .inscription-section {
+        padding: 10px;
+    }
+    
+    #header {
+        padding: 5px 20px;
+    }
+    
+    footer {
+        padding: 20px;
+    }
+}
+.form-group {
+    position: relative; /* Nécessaire pour positionner l'œil à l'intérieur de l'input */
+    margin-bottom: 20px;
+}
+
+.form-group input[type="password"] {
+    width: 100%;
+    padding-right: 40px; /* Laisse de l'espace pour l'œil */
+}
+.fa-regular, .far
+{
+    font-size: 18px;
+    background-color: transparent;
+}
+.toggle-password {
+    position: absolute;
+    right: 10px; /* Positionne l'œil à l'intérieur, à droite */
+    top: 70%;
+    background-color: transparent;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #582f1b; 
+    user-select: none; /* Pour empêcher la sélection de l'icône */
+}
+
+.toggle-password:hover {
+    color: #2e7d32; 
+}
+
+.forgot-password-link {
+   color: #582f1b;
+   text-decoration: none;
+   font-weight: bold;
+}
+#password-requirements {
+    display: none; 
+    color: #1aac2e;
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin: 20px;
+}
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: rgb(255, 2, 2);
+}
+/* Mobile Navigation */
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+@media (max-width: 799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #d3cfc1;
+        box-shadow: 0 40px 60px rgba(88, 47, 27, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease;
+    }
+
+    #navbar.active {
+        right: 0;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #582f1b;
+        font-size: 24px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    #close {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #582f1b;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    #shopping-bag {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 477px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    #header {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    #mobile i {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .inscription-section {
+        padding: 5px;
+    }
+
+    .message {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
