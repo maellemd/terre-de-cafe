@@ -27,6 +27,10 @@ h2 {
     color: #222;
 }
 
+.h2-center-it {
+    text-align: center;
+}
+
 h4 {
     font-size: 20px;
     color: #222;
@@ -147,7 +151,7 @@ p {
     color: #62805d;
 }
 
-/* Btn */
+/* Boutons */
 .button {
     font-size: 17px;
     font-weight: bold;
@@ -194,6 +198,26 @@ p {
 .button:hover::after {
     height: 100%;
     transition-delay: 0.4s;
+}
+
+/* Bouton Newsletter et News */
+.btn-newsletter {
+    font-size: 17px;
+    font-weight: bold;
+    background: #62805d;
+    border: none;
+    padding: 1em 2.5em;
+    color: #d3cfc1;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-news {
+    text-decoration: none;
+    color: #d3cfc1;
 }
 
 /* Features */
@@ -376,7 +400,7 @@ p {
 }
 
 /* Newsletter */
-#newletter {
+#newsletter {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -388,7 +412,7 @@ p {
     position: relative;
 }
 
-#newletter .newstext {
+#newsletter .newstext {
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
@@ -396,44 +420,45 @@ p {
     background-color: transparent;
 }
 
-#newletter h4 {
+#newsletter h4 {
     font-size: 22px;
     font-weight: 700;
     background-color: transparent;
     color: #c4c2ba;
 }
 
-#newletter p {
+#newsletter h6 {
     font-size: 14px;
     font-weight: 600;
     color: #e8e4d5;
     background-color: transparent;
 }
 
-#newletter p span {
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e8e4d5;
+    background-color: transparent;
+}
+
+#newsletter p span {
     color: #62805d;
 }
 
-#newletter .form {
+#newsletter .form {
     display: flex;
     width: 40%;
 }
 
-#newletter input {
+#newsletter input {
     height: 3.125rem;
-    padding: 0 6.25em;
+    padding: 0 1.25em;
     font-size: 14px;
     width: 100%;
     border: 1px solid transparent;
     border-radius: 4px;
     outline: none;
     background-color: #d3cfc1;
-}
-
-#newletter button {
-    background-color: #62805d;
-    color: #d3cfc1;
-    white-space: nowrap;
 }
 
 /* Footer */
@@ -563,16 +588,12 @@ footer img {
     #navbar.active {
         right: 0;
     }
-
     #navbar li {
         margin-bottom: 25px;
-        width: 100%;
     }
 
     #navbar li a {
         font-size: 18px;
-        width: 100%;
-        display: block;
         padding: 10px 20px;
     }
 
@@ -581,26 +602,26 @@ footer img {
         display: none;
     }
 
-    /* Btn hamburger */
+    /* Mobile menu */
     #mobile {
         display: flex;
         align-items: center;
         position: absolute;
         right: 20px;
         top: 50%;
-        /* Rotation */
-        transform: translateY(-50%); 
+        transform: translateY(-50%);
         z-index: 1001;
     }
 
     #mobile i {
         color: #222;
         font-size: 24px;
+        padding-left: 20px;
         cursor: pointer;
     }
 
     #close {
-        display: block;
+        display: initial;
         position: absolute;
         top: 30px;
         right: 30px;
@@ -645,7 +666,7 @@ footer img {
     }
 
     /* Newsletter */
-    #newletter .form {
+    #newsletter .form {
         width: 70%;
     }
 
@@ -729,21 +750,21 @@ footer img {
     }
 
     /* Newsletter */
-    #newletter {
+    #newsletter {
         padding: 40px 20px;
     }
 
-    #newletter .form {
+    #newsletter .form {
         width: 100%;
         margin-top: 20px;
     }
 
-    #newletter input {
+    #newsletter input {
         padding: 0 15px;
         width: calc(100% - 100px);
     }
 
-    #newletter button {
+    #newsletter button {
         padding: 10px 20px;
     }
 

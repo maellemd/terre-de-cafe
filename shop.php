@@ -96,50 +96,51 @@ try {
 </section>
 
 <!-- Newsletter -->
-<section id="newletter" class="section1 section2">
-    <div class="newstext">
-        <h4>S'inscrire à notre newsletter</h4>
-        <p>Recevez des nouvelles et des offres exclusives par email</p>
-    </div>
-    <div class="form">
-        <input type="text" placeholder="Votre adresse email">
-        <button class="btn-newsletter">S'inscrire</button>
-    </div>
-</section>
-<footer class="section1">
-    <div class="col">
-        <h4>Contact</h4>
-        <p><strong>Email:</strong> terre-de-cafe@email.com</p>
-        <p><strong>Phone:</strong> +33 123 456 789</p>
-        <div class="follow">
-            <h4>Suivez-nous</h4>
-            <div class="icon">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-pinterest-p"></i>
-                <i class="fab fa-youtube"></i>
+<section id="newsletter" class="section1 section2">
+        <div class="newstext">
+            <h4>S'inscrire à notre newsletter</h4>
+            <h6>Et bénéficier de -5% (cumulable avec l'offre pour les nouveaux clients)</h6>
+            <p>Recevez des nouvelles et des offres exclusives par email</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Votre adresse email">
+            <button class="btn-newsletter">S'inscrire</button>
+        </div>
+    </section>
+  <footer class="section1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Email:</strong> terre-de-cafe@email.com</p>
+            <p><strong>Phone:</strong> +33 123 456 789</p>
+            <div class="follow">
+                <h4>Suivez-nous</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col">
-        <h4>A propos</h4>
-        <a href="about.php">A propos de nous</a>
-        <a href="blog.php">Blog</a>
-        <a href="#">Conditions de ventes</a>        
-        <a href="#">Politique de confidentialité</a>
-    </div>
-    <div class="col">
-        <h4>Mon compte</h4>
-        <a href="#" data-account-link>Compte</a>
-        <a href="#" data-account-link>Suivre mes commandes</a>
-        <a href="#">F.A.Q</a>
-    </div>    
-    <div class="col install">
-        <p>Paiement sécurisé</p>
-        <img src="../img/paypal-1.png" alt="Paiement">
-    </div>
-</footer>
+        <div class="col">
+            <h4>A propos</h4>
+            <a href="about.php">A propos de nous</a>
+            <a href="blog.php">Blog</a>
+            <a href="#">Conditions de ventes</a>        
+            <a href="#">Politique de confidentialité</a>
+        </div>
+        <div class="col">
+            <h4>Mon compte</h4>
+            <a href="#" data-account-link>Compte</a>        
+            <a href="#" data-account-link>Suivre mes commandes</a>        
+            <a href="#">F.A.Q</a>
+        </div>    
+        <div class="col install">
+            <p>Paiement sécurisé</p>
+            <img src="img/paypal-1.png" alt="Paiement">
+        </div>
+    </footer>
 <div class="copyright">
     <p>© 2024 Terre de Café - Tous droits reservés</p>
 </div>

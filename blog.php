@@ -68,16 +68,17 @@
         </div>
     </div>
 </section>
-<section id="newletter" class="section1 section2">
-    <div class="newstext">
-        <h4>S'inscrire à notre newsletter</h4>
-        <p>Recevez des nouvelles et des offres exclusives par email</p>
-    </div>
-    <div class="form">
-        <input type="text" placeholder="Votre adresse email">
-        <button class="btn-newsletter">S'inscrire</button>
-    </div>
-</section>
+<section id="newsletter" class="section1 section2">
+        <div class="newstext">
+            <h4>S'inscrire à notre newsletter</h4>
+            <h6>Et bénéficier de -5% (cumulable avec l'offre pour les nouveaux clients)</h6>
+            <p>Recevez des nouvelles et des offres exclusives par email</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Votre adresse email">
+            <button class="btn-newsletter">S'inscrire</button>
+        </div>
+    </section>
 <footer class="section1">
     <div class="col">
         <h4>Contact</h4>
